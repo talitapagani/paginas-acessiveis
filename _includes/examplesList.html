@@ -1,0 +1,16 @@
+<section class="chapters">
+	<div class="wrapper">
+		<h2>Todos os exemplos</h2>
+		<ol>
+			{% for example in site.examples.right %}
+				<li>
+					<a
+						class="{% if example.title == page.title %}examples-isCurrentPage{% endif%}"
+						href="{{ chapter.url }}">
+							{{ example.title }}
+					</a>
+				</li>
+			{% endfor %}
+		</ol>
+	</div>
+</section>

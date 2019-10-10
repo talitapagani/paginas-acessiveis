@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html dir="ltr" lang="pt-br">
+	<head>
+        <title>{% if page.title %}{{ page.title }} - {% endif %} {{ site.name }}</title>
+        {% include head.html %}
+	</head>
+	<body class="{{ page.id }}">
+        {% include header.html %}
+        <main>
+					{{ content }}
+				</main>
+        {% include footer.html %}
+	</body>
+</html>

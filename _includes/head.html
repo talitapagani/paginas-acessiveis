@@ -1,0 +1,39 @@
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="initial-scale=1.0">
+<meta name="Author" content="Talita Pagani">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:type" content="website">
+<meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %} {{ site.name }}">
+
+{% if page.description %}
+	<meta property="og:description" content="{{ page.description }}">
+{% else %}
+	<meta property="og:description" content="{{ site.description }}">
+{% endif %}
+
+<meta property="og:url" content="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+<meta property="og:site_name" content="Páginas Acessíveis">
+
+<meta name="twitter:card" content="summary">
+
+{% if page.description %}
+	<meta name="twitter:description" content="{{ page.description }}">
+{% else %}
+	<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+
+<meta name="twitter:title" content="{% if page.title %}{{ page.title }} - {% endif %} {{ site.name }}">
+<meta name="twitter:site" content="@talitapagani">
+<meta name="twitter:creator" content="@talitapagani">
+
+{% if page.description %}
+	<meta itemprop="description" content="{{ page.description }}">
+{% else %}
+	<meta itemprop="description" content="{{ site.description }}">
+{% endif %}
+
+<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
+
+<link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+
+<link rel="author" href="https://twitter.com/talitapagani">
