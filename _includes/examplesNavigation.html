@@ -1,8 +1,10 @@
 <section class="examplesNavigation">
+	<div class="wrapper">
 	{% if page.previous %}
 		<a rel="prev" class="examplesNavigation-previous" href="{{page.previous.url}}">&larr; {{page.previous.title}}</a>
 	{% endif %}
 	{% if page.next %}
 		<a rel="next" class="examplesNavigation-next" href="{{page.next.url}}" >{{page.next.title}} &rarr;</a>
 	{% endif %}
+	</div>
 </section>

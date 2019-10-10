@@ -6,10 +6,17 @@
   </head>
   <body>
     {% include header.html %}
-    <main>
-      <div class="content">
-        <h1>{{page.title }}</h1>
-        {{ content }}
+    <main id="mainContent">
+    	<div class="content-header">
+    		<div class="wrapper">
+    			{% include breadcrumb.html %}
+        	<h1>{{page.title }}</h1>
+    		</div>
+    	</div>
+      <div class="content-body">
+      	<div class="wrapper">
+        	{{ content }}
+      	</div>
       </div>
     </main>
     {% include examplesNavigation.html %}

@@ -1,0 +1,7 @@
+{% if page.breadcrumb %}
+	<ul>
+	{% for item in page.breadcrumb %}
+		<li><a href="{{ item.url }}">{{ item.title }}</a></li>
+	{% endfor %}
+	</ul>
+{% endif %}

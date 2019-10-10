@@ -1,0 +1,65 @@
+body {
+	font-size: 1.375rem;
+	line-height: 1.5em;
+}
+
+a,
+a:link {
+	color: $link-color;
+	text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+	color: $link-hover-color;
+	text-decoration: none;
+}
+
+a:focus {
+	outline: 2px dotted $link-hover-color;
+}
+
+a:active {
+	color: $link-color;
+}
+
+/* HEADING */
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+}
+
+h2, h3, h4, h5, h6 {
+	margin: 3rem 0 1rem 0;
+}
+
+h1 {
+	font-size: 3rem;
+	color: $secondary-color;
+	margin: 1rem 0 1rem 0;
+}
+
+h2 {
+	font-size: 2.5rem;
+	color: $dark;
+}
+
+h3 {
+	font-size: 2rem;
+	color: $dark;
+}
+
+h4 {
+	font-size: 1.75rem;
+	color: $text-color;
+}
+
+h5 {
+	font-size: 1.5rem;
+	color: $text-color;
+}
+
+h6 {
+	font-size: 1rem;
+	color: $text-color;
+}

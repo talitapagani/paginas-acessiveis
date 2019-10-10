@@ -1,4 +1,18 @@
+html, body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	background: $dark-grey;
+	color: $text-color;
+	padding: 0;
+	margin: 0;
+}
+
 .wrapper {
 	max-width: 740px;
 	margin: 0 auto 0 auto;
+}
+
+.content-header {
+	background: $light;
+	padding: 2rem 0 2rem 0;
 }
