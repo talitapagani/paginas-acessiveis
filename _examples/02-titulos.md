@@ -11,10 +11,23 @@ breadcrumb:
     title: Exemplos
 ---
 
-## Exemplo de conteúdo
+## Olá, sou um título de nível 2
 
-Exemplo de parágrafo.
+Seguir a hierarquia de `tags` de cabeçalho é importante porque estabelece uma relação lógica entre as informações.
 
-## Exemplo de conteúdo
+A tag `<h1>` deve sempre representar o título da página e não o logo. Toda página deve ter ao menos um título de nível 1.
 
-Exemplo de parágrafo.
+As tags seguintes, do `<h2>` ao `<h6>` devem ser usadas para representar seções e subseções, **sem pular** a ordem, ou seja, um subtítulo de uma seção marcada com `<h2>` usará a tag `<h3>` e não `<h4>` ou `<h5>`, por exemplo.
+
+### Sou um título de nível 3, na sequência do nível 2
+
+Aqui está um exemplo. Esta seção está subordinada à seção anterior, com o título de nível 2, então, ela está marcada com um título de nível 3, ou `<h3>`. Se esta seção for quebrada em subseções, eu devo começar usando o `<h4>`.
+
+Cada página é como se fosse um livro:
+- O `<h1>` é o título do livro;
+- O `<h2>` são as seções principais;
+- Do `<h3>` em diante, são as subseções.
+
+## Sou uma nova seção com título de nível 2
+
+Aqui começamos outra seção com uma tag `<h2>`.
