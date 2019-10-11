@@ -6,7 +6,7 @@
 				<li>
 					<a
 						class="{% if example.title == page.title %}examples-isCurrentPage{% endif%}"
-						href="{{ example.url }}">
+						href="{{ example.url | relative_url }}">
 							{{ example.title }}
 					</a>
 				</li>
