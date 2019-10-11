@@ -1,7 +1,7 @@
 ---
 layout: example
-title: Introdução
-permalink: /exemplos/introducao/
+title: Foco e Teclado
+permalink: /exemplos/foco-e-teclado/
 description: TBD
 
 breadcrumb:

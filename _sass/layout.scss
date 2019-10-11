@@ -14,5 +14,18 @@ html, body {
 
 .content-header {
 	background: $light;
-	padding: 2rem 0 2rem 0;
+	padding: 2rem;
+}
+
+.content-body {
+	padding: 0 2rem;
+
+	&.home {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+
+    p {
+      margin-bottom: 5rem;
+    }
+	}
 }

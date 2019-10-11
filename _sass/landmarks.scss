@@ -19,12 +19,17 @@
 		padding: 20px;
 		color: $text-on-dark-color;
 
+		&.navigation-isActive {
+			background: $primary-light-color;
+		}
+
 		&:link {
 			color: $text-on-dark-color;
 		}
 
 		&:hover,
 		&:focus {
+			background: $primary-dark-color;
 			outline-color: $text-on-dark-color;
 		}
 	}
@@ -47,12 +52,34 @@
 
 }
 
+.primaryLinkButton,
+.primaryLinkButton:link {
+	display: inline-block;
+	border-radius: 30px;
+	padding: .75rem 2rem;
+	text-decoration: none;
+	border: 2px solid $link-color;
+}
+
+.primaryLinkButton:hover,
+.primaryLinkButton:focus {
+	background: $link-hover-color;
+	color: $text-on-dark-color;
+	border-color: $link-hover-color;
+}
+
 /* EXAMPLES NAVIGATION */
 
 .examplesNavigation {
 	background: $primary-color;
 	padding: 2rem;
 	margin-top: 3rem;
+
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
 
 	a, 
 	a:link,
@@ -61,12 +88,26 @@
 	a:focus,
 	a:hover {
 		color: $text-on-dark-color;
+		text-decoration: none;
 	}
 
-	.wrapper {
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+	a:focus {
+		outline-color: $text-on-dark-color;
+	}
+
+	.examplesNavigation-previous,
+	.examplesNavigation-next {
+		@extend .primaryLinkButton;
+		border-color: $light;
+	}
+
+	.examplesNavigation-previous:hover,
+	.examplesNavigation-previous:focus,
+	.examplesNavigation-next:hover,
+	.examplesNavigation-next:focus {
+		color: $secondary-dark-color;
+		background: $light;
+		border-color: $light;
 	}
 
 }
@@ -90,6 +131,30 @@
 		color: $text-on-dark-color;
 	}
 
+	a:focus {
+		outline-color: $text-on-dark-color;
+	}
+
 }
 
 /* FOOTER */
+
+.footer {
+	background: $primary-dark-color;
+	padding: 2rem;
+	font-size: 1rem;
+
+	p, 
+	a, 
+	a:link,
+	a:visited,
+	a:active,
+	a:focus,
+	a:hover {
+		color: $text-on-dark-color;
+	}
+
+	a:focus {
+		outline-color: $text-on-dark-color;
+	}
+}

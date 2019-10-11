@@ -1,9 +1,14 @@
 ---
 layout: example
-title: Títulos e hierarquia de cabeçalho
+title: Títulos
 permalink: /exemplos/titulos/
 description: TBD
 
+breadcrumb:
+  - url: /
+    title: Página inicial
+  - url: /exemplos
+    title: Exemplos
 ---
 
 ## Exemplo de conteúdo

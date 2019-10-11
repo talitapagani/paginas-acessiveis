@@ -1,0 +1,40 @@
+.skipToContent {
+	display: inline-block;
+	padding: 1rem;
+	font-size: 1rem;
+	background: $light;
+	box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, .2);
+	position: fixed;
+	top: 0;
+	left: 0;
+	transform: translateY(-80px);
+	transition: transform 500ms;
+
+	&:focus {
+		transform: translateY(0px);
+	}
+}
+
+.breadcrumb {
+	padding: 0;
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 700;
+
+	li {
+		list-style: none;
+		display: inline-block;
+	}
+
+	a {
+		display: inline-block;
+	}
+
+	li:not(:last-child) a:after {
+		display: inline-block;
+		content: "\203A";
+		color: $secondary-light-color;
+		font-size: 1.5rem;
+		padding: 0 .5rem 0 .75rem;
+	}
+}

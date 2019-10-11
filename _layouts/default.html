@@ -12,7 +12,7 @@
         	<h1>{{page.title }}</h1>
     		</div>
     	</div>
-      <div class="content-body">
+      <div class="content-body{% if page.id %} {{ page.id }}{% endif %}">
       	<div class="wrapper">
         	{{ content }}
       	</div>

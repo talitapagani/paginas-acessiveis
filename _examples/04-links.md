@@ -1,7 +1,7 @@
 ---
 layout: example
-title: Introdução
-permalink: /exemplos/introducao/
+title: Links
+permalink: /exemplos/links/
 description: TBD
 
 breadcrumb:
