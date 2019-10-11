@@ -1,5 +1,6 @@
 _site
 **/.DS_Store
+**/.sass-cache
 *.sublime-project
 *.sublime-workspace
 Gemfile.lock
