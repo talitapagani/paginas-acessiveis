@@ -31,7 +31,7 @@ Cada página é como se fosse um livro:
 
 <div class="tip">
   <h2 class="tip-title">Dica</h2>
-  Tente visualizar esta página sem CSS para perceber como uma estrutura de títulos adequada faz sentido para a compreensão do conteúdo mesmo sem estilos.
+  <p>Tente visualizar esta página sem CSS para perceber como uma estrutura de títulos adequada faz sentido para a compreensão do conteúdo mesmo sem estilos.</p>
 </div>
 
 ## Sou uma nova seção com título de nível 2

@@ -1,3 +1,5 @@
+/* SKIP TO CONTENT */
+
 .skipToContent {
 	display: inline-block;
 	padding: 1rem;
@@ -14,6 +16,8 @@
 		transform: translateY(0px);
 	}
 }
+
+/* BREADCRUMBS */
 
 .breadcrumb {
 	padding: 0;
@@ -39,6 +43,8 @@
 	}
 }
 
+/* TIP BOX */
+
 .tip {
 	margin: 3rem 0;
 	padding: 3rem 1rem 1rem 1rem;
@@ -60,4 +66,35 @@
 		top: 0;
 		left: 0;
 	}
+}
+
+/* FIGURE AND FIGURE CAPTION */
+
+figure {
+	margin: 0;
+	padding: 1rem;
+	box-sizing: border-box;
+	background: $light;
+	box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, .2);
+
+	img {
+		width: 100%;
+	}
+
+	figcaption {
+		font-size: 1rem;
+	}
+
+}
+
+/* PRE */
+
+pre {
+	background: lighten($secondary-light-color, 40%);
+	padding: 1.5rem;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
 }

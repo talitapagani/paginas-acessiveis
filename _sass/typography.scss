@@ -23,6 +23,12 @@ a:active {
 	color: $link-color;
 }
 
+.highlighter-rouge {
+	font-size: 1.5rem;
+	color: $secondary-dark-color;
+	font-weight: 700;
+}
+
 /* HEADING */
 
 h1, h2, h3, h4, h5, h6 {
