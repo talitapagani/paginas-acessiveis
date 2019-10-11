@@ -38,3 +38,26 @@
 		padding: 0 .5rem 0 .75rem;
 	}
 }
+
+.tip {
+	margin: 3rem 0;
+	padding: 3rem 1rem 1rem 1rem;
+	background: $light;
+	border: 2px solid $secondary-light-color;
+	border-radius: 0 15px 15px 15px;
+	box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, .2);
+	position: relative;
+
+	.tip-title {
+		margin: 0;
+		font-size: 1.3rem;
+		color: $text-on-dark-color;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		background: $secondary-light-color;
+		padding: .5rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+}
