@@ -15,9 +15,20 @@ breadcrumb:
 
 A tag `<img>` possui um atributo chamado `alt` que permite especificar um texto alternativo que descreve a imagem. Este texto é lido por softwares leitores de tela e também é reconhecido por mecanismos de busca. A falta do atributo `alt` em imagens é uma das falhas mais comuns em acessibilidade web.
 
+### Navegando por uma imagem sem Alt
+
+Use um leitor de telas para perceber como a imagem a seguir, sem texto alternativo, será lida para pessoas com deficiência visual. De preferência, faça isso com o monitor desligado. Fez sentido para você?
+
+<figure>
+  <img src="{{ site.baseurl }}/images/aaron-burden-ufFIweqSPd4-unsplash.jpg">
+  <figcaption>
+    Foto por <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> no <a href="https://unsplash.com/s/photos/lake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  </figcaption>
+</figure>
+
 ### Exemplo de imagem com Alt
 
-Use um leitor de telas para perceber como a imagem a seguir será lida para pessoas com deficiência visual.
+Use um leitor de telas para perceber como a imagem a seguir será lida para pessoas com deficiência visual. Visualmente, não mudou nada para quem é vidente, mas faz uma grande diferença para as pessoas que usam leitores de tela.
 
 <figure>
   <img src="{{ site.baseurl }}/images/aaron-burden-ufFIweqSPd4-unsplash.jpg" alt="Um barco cinza navegando em um lago calmo. Ao fundo, há uma mata ao redor do lago.">
@@ -42,7 +53,7 @@ Neste exemplo, a descrição é muito longa, então é inserido o texto fora da 
 <figure>
   <img src="{{ site.baseurl }}/images/aaron-burden-ufFIweqSPd4-unsplash.jpg" alt="" aria-describedby="imageDescription">
   <figcaption>
-    <p id="imageDescription">Em primeiro plano, à direita, há uma parte de um barco cinza que está navegando em um lago calmo. Ao fundo, há uma mata ao redor do lago, composta árvores de folhagem verde clara e verde escura. As árvores são refletidas na água do lago.</p>
+    <p id="imageDescription">Na foto, em primeiro plano, à direita, há uma parte de um barco cinza que está navegando em um lago calmo. Ao fundo, há uma mata ao redor do lago, composta árvores de folhagem verde clara e verde escura. As árvores são refletidas na água do lago.</p>
     Foto por <a href="https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Aaron Burden</a> no <a href="https://unsplash.com/s/photos/lake?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
   </figcaption>
 </figure>
@@ -53,7 +64,7 @@ Veja a seguir como ficou no HTML. Repare que ainda temos o atributo `alt`, mas e
       <img src="images/aaron-burden-ufFIweqSPd4-unsplash.jpg" alt="" 
            aria-describedby="imageDescription">
       <figcaption>
-        <p id="imageDescription">Em primeiro plano, à direita, há uma parte de um barco cinza que está navegando em um lago calmo. Ao fundo, há uma mata ao redor do lago, composta árvores de folhagem verde clara e verde escura. As árvores são refletidas na água do lago.</p>
+        <p id="imageDescription">Na foto, em primeiro plano, à direita, há uma parte de um barco cinza que está navegando em um lago calmo. Ao fundo, há uma mata ao redor do lago, composta árvores de folhagem verde clara e verde escura. As árvores são refletidas na água do lago.</p>
       </figcaption>
     </figure>
 
