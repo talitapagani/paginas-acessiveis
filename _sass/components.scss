@@ -164,7 +164,6 @@ pre {
 		font-family: 'Roboto', sans-serif;
 		font-size: 1.2rem;
 		padding: 0.75rem;
-		margin-bottom: 1rem;
 		width: 100%;
 		box-sizing: border-box;
 
@@ -174,7 +173,71 @@ pre {
 
 		&[aria-invalid=true] {
 			border: 1px solid $link-color;
+
+		+ .fieldMessage:after {
+				display: block;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				background: $link-color;
+				color: $text-on-dark-color;
+				content: "!";
+				font-weight: 700;
+				text-align: center;
+		    position: absolute;
+				top: -40px;
+				right: 16px;
+			}
 		}
 	}
 
+	.formButton {
+
+		&:hover,
+		&:focus {
+			background: $link-color;
+		}
+
+		&:focus {
+			outline: 2px dotted $secondary-dark-color;
+		}
+
+		&:active {
+			background: $link-hover-color;
+		}
+	}
+
+}
+
+.fieldTip {
+	font-size: 1rem;
+	color: $secondary-color;
+	display: block;
+}
+
+.fieldMessage {
+	@extend .fieldTip;
+	color: $link-color;
+	font-weight: 700;
+	position: relative;
+}
+
+output {
+	display: block;
+	font-size: 1rem;
+	font-weight: 700;
+	color: $text-on-dark-color;
+	padding: 1rem;
+
+	&.error {
+		background: $link-color;
+	}
+
+	&.success {
+		background: $secondary-color;
+	}
+
+	&:empty {
+		padding: 0;
+	}
 }

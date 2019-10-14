@@ -22,44 +22,11 @@ document.addEventListener("DOMContentLoaded", (e) => {
     }
   }
 
-  function initRegularForm() {
-
-    paForm.regular.button.disabled = true;
-
-    paForm.regular.inputs.forEach((input) => {
-      input.addEventListener("blur", () => {
-
-        if (paForm.regular.name.value !== '' && paForm.regular.email.value !== '') {
-          paForm.regular.button.disabled = false;
-        } else {
-          paForm.regular.button.disabled = true;
-        }
-
-      });
-    });
-
-  }
-
   function initARIAForm() {
-
-    paForm.aria.button.disabled = true;
 
     paForm.aria.button.addEventListener("click", (e) => {
       e.preventDefault();
       ariaFormValidation();
-    });
-
-    paForm.aria.inputs.forEach((input) => {
-      input.addEventListener("blur", () => {
-
-        if (paForm.aria.name.value !== '' && paForm.aria.email.value !== '') {
-          paForm.aria.button.disabled = false;
-        } else {
-          paForm.aria.button.disabled = true;
-        }
-
-      });
-
     });
 
   }
@@ -110,7 +77,6 @@ document.addEventListener("DOMContentLoaded", (e) => {
 
   }
 
-  initRegularForm();
   initARIAForm();
 
 });
