@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", (e) => {
       }
 
       if(!isValid(frm.email)) {
-        emailMessage.innerHTML = "O e-mail não pode ficar em branco e deve ser um válido.";
+        emailMessage.innerHTML = "O e-mail não pode ficar em branco e deve ser válido.";
       }
     }
 
