@@ -98,3 +98,83 @@ pre {
   white-space: -o-pre-wrap;
   word-wrap: break-word;
 }
+
+/* FORMS */
+
+.wrongForm,
+.rightForm {
+	padding: 1.5rem;
+	background: $light;
+	box-sizing: border-box;
+}
+
+.formButton {
+	display: block;
+	border-radius: 10px;
+	padding: .75rem 2rem;
+	margin-top: 2rem;
+	border: none;
+	background: $secondary-dark-color;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+	color: $text-on-dark-color;
+
+	&:disabled {
+		opacity: .5;
+	}
+}
+
+.wrongForm {
+	
+	input {
+		display: block;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1.2rem;
+		padding: 0.75rem;
+		margin-bottom: 1rem;
+		width: 100%;
+		box-sizing: border-box;
+		border: 1px solid $secondary-light-color;
+	}
+}
+
+.rightForm {
+
+	label {
+		font-weight: 700;
+		display: block;
+		padding: .5rem 0;
+
+		span {
+			font-weight: normal;
+
+			&.required {
+				color: $link-color;
+			}
+
+			&.optional {
+				color: $secondary-color;
+			}
+		}		
+	}
+	
+	input {
+		display: block;
+		border: 1px solid $secondary-light-color;
+		font-family: 'Roboto', sans-serif;
+		font-size: 1.2rem;
+		padding: 0.75rem;
+		margin-bottom: 1rem;
+		width: 100%;
+		box-sizing: border-box;
+
+		&:focus {
+			outline: 3px solid $secondary-dark-color;
+		}
+
+		&[aria-invalid=true] {
+			border: 1px solid $link-color;
+		}
+	}
+
+}
