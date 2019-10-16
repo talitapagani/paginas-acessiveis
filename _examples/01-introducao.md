@@ -13,7 +13,7 @@ breadcrumb:
 
 ## Sobre este site
 
-O "Páginas Acessíveis" é um projeto de código aberto criado para demonstrar exemplos práticos de código HTML acessível.
+O "Páginas Acessíveis" é um projeto de código aberto criado em parceria entre a [Sondery](https://sondery.com.br) e [Talita Pagani](https://twitter.com/talitapagani) para demonstrar exemplos práticos de código HTML acessível e ajudar profissionais de mídia e tecnologia a entender melhor acessibilidade web através de um conteúdo com linguagem descomplicada.
 
 ## Por que este site foi criado?
 
